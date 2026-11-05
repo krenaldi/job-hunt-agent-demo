@@ -1,39 +1,21 @@
 # Job Hunt Agent
 
-An AI agent to help with the job search: finding relevant openings, tracking applications, and preparing application materials.
+A Markdown-driven AI agent workflow for a personal job search. There is no application code: Claude Code reads the files below and runs the weekly procedure.
 
-> **Status:** Early stage. This project has no code yet, and this README is a starting point. Sections marked TODO should be filled in as the project takes shape.
+## How it works
 
-## Goals
-
-- Find job postings that match your skills and preferences
-- Keep track of applications and their status
-- Help tailor resumes, cover letters, and outreach to specific roles
-
-## Getting Started
-
-TODO: Add prerequisites, installation, and configuration steps (e.g. API keys, environment variables).
-
-```bash
-# TODO: install and run commands
-```
+1. `job_search_profile.md` defines what counts as a match (roles, level, location, industries, salary floor, dealbreakers).
+2. `weekly_job_hunt_workflow.md` is the numbered procedure Claude follows: search, filter, dedupe, record, check follow-ups, report.
+3. `job_leads.md` is the running table of leads (Source, Role, Company, Location, Link, MatchReason, Notes, OutreachStatus).
+4. `weekly_run_prompt.md` holds the prompt to paste each week to start a run.
+5. `CLAUDE.md` gives Claude Code the project rules (e.g. never apply or message anyone without approval).
 
 ## Usage
 
-TODO: Describe how to run the agent and what a typical session looks like.
+Open the folder in Claude Code and paste the prompt from `weekly_run_prompt.md`. Claude updates `job_leads.md` and summarizes new leads, follow-ups due, and next actions. Review leads marked `Unverified` before acting on them.
 
-## Project Structure
+## Setup notes
 
-TODO: Describe the main directories and files once they exist.
-
-## Roadmap
-
-- [ ] Define the agent's scope and core workflow
-- [ ] Set up the project structure and dependencies
-- [ ] Implement job search/discovery
-- [ ] Implement application tracking
-- [ ] Implement resume and cover letter tailoring
-
-## License
-
-TODO: Choose a license.
+- `.env` is gitignored and holds local secrets; it is not part of the repo.
+- Web search must be available to Claude for the search step to run.
+- This repo may be public: keep personal details (contact info, resume content) out of tracked files.

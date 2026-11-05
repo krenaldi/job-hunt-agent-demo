@@ -17,7 +17,7 @@ Read these before doing any job-hunt task. Each is the source of truth for its t
 | `job_leads.md` | Saved leads and notes. Append new leads and update existing ones here; don't create parallel lists. |
 | `weekly_run_prompt.md` | The reusable command the user runs weekly. Treat it as the entry point; keep it consistent with the workflow file. |
 
-These files are not created yet. If one is missing, say so and offer to create it. Don't invent the user's preferences.
+`job_search_profile.md` is filled in. If a file is missing or contains TODOs, say so and ask; don't invent the user's preferences.
 
 The user's resume is outside the repo at `/Users/krisrenaldi/Documents/Resumes/KRIS RENALDI Resume.pdf`. Read it for facts about their background; don't copy it into the repo.
 
@@ -26,6 +26,8 @@ The user's resume is outside the repo at `/Users/krisrenaldi/Documents/Resumes/K
 - Match leads against `job_search_profile.md`, and note why a lead fits or doesn't.
 - When adding to `job_leads.md`, avoid duplicates (check company and role first) and keep each lead's source link and date.
 - Never apply, send messages, or submit forms on the user's behalf without explicit approval. Draft materials and let the user send them.
+- `job_leads.md` columns: Source, Role, Company, Location, Link, MatchReason, Notes, OutreachStatus. Keep them in that order; the workflow depends on it.
+- Leads taken from search snippets without opening the posting must say `Unverified` in Notes.
 - Don't state facts about the user's experience that aren't in their resume or profile.
 
 ## Repository

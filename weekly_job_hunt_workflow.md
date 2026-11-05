@@ -16,7 +16,7 @@ Run top to bottom. Criteria live in `job_search_profile.md`; read them each run,
    - Titles: senior backend engineer, senior full-stack engineer, senior AI/ML engineer
    - Industries: telecommunications, entertainment, SaaS, AI, fintech, healthcare
    Also check career pages of any companies already in `job_leads.md`.
-4. **Open each promising posting** (stop at about 30). For each, capture: company, title, link, posted date, location and hybrid policy, salary range, on-call mentions.
+4. **Open each promising posting** (fetch the page, don't rely on search snippets) (stop at about 30). For each, capture: company, title, link, posted date, location and hybrid policy, salary range, on-call mentions.
 5. **Reject** a posting if any of these is true, and keep a one-line reason in your working notes:
    - Not software engineering, or below senior level
    - Posted salary under $150k
@@ -25,9 +25,9 @@ Run top to bottom. Criteria live in `job_search_profile.md`; read them each run,
    - Posted before the 14-day window, or closed
 6. **Label the rest.**
    - **Strong**: senior SWE (backend, full-stack, or AI/ML), hybrid within 60 minutes, preferred industry, no heavy on-call.
-   - **Maybe**: everything else that survived step 5. Name the exact unknown (e.g. "salary not listed").
+   - **Maybe**: everything else that survived step 5, including fully in-office roles within the commute limit. Name the exact unknown (e.g. "salary not listed", "in-office only").
 7. **Deduplicate.** Skip any posting whose company + role already appears in `job_leads.md` (case-insensitive, any link). Don't re-add it.
-8. **Append new leads** to the table in `job_leads.md`, one row each:
+8. **Append new leads** (if you couldn't open the posting, put `Unverified` in Notes) to the table in `job_leads.md`, one row each:
    Source (job board or site) | Role | Company | Location | Link | MatchReason (`Strong:` or `Maybe:` + reason) | Notes (salary if known, posted date, date added) | OutreachStatus `Not started`.
    Don't edit or reorder existing rows.
 9. **Check the pipeline.**
