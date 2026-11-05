@@ -28,11 +28,11 @@ Run top to bottom. Criteria live in `job_search_profile.md`; read them each run,
    - **Maybe**: everything else that survived step 5. Name the exact unknown (e.g. "salary not listed").
 7. **Deduplicate.** Skip any posting whose company + role already appears in `job_leads.md` (case-insensitive, any link). Don't re-add it.
 8. **Append new leads** to the table in `job_leads.md`, one row each:
-   Company | Role | Link | today's date | `New` | `Strong:` or `Maybe:` + reason, salary if known.
+   Source (job board or site) | Role | Company | Location | Link | MatchReason (`Strong:` or `Maybe:` + reason) | Notes (salary if known, posted date, date added) | OutreachStatus `Not started`.
    Don't edit or reorder existing rows.
 9. **Check the pipeline.**
-   - List leads with status `Applied` or `Interviewing` whose latest date is 7+ days old, with a suggested next step.
-   - Open links for `New`/`Interested` leads older than 30 days. If the posting is closed, add "closed [date]" to Notes and propose `Passed`.
+   - List leads with OutreachStatus `Applied`, `Followed up`, or `Interviewing` and no update noted in 7+ days (check dates in Notes), with a suggested next step.
+   - Open links for `Not started` or `Drafted` leads added 30+ days ago. If the posting is closed, add "closed [date]" to Notes and propose `Passed`.
 10. **Report in chat** (no new file unless asked):
     - Counts: reviewed, rejected, added as Strong, added as Maybe
     - New leads, Strong first: company, role, link, one-line reason
