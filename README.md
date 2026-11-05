@@ -16,6 +16,6 @@ Open the folder in Claude Code and paste the prompt from `weekly_run_prompt.md`.
 
 ## Setup notes
 
-- `.env` is gitignored and holds local secrets; it is not part of the repo.
+- Secrets live in `.env` (gitignored, file mode 600). Copy `.env.example` to `.env` and fill in `SEARCHAPI_API_KEY`, `SERPAPI_API_KEY`, and the others. Never paste keys into tracked files, commits, or chat; rotate any key that was exposed.
 - Web search must be available to Claude for the search step to run.
 - This repo may be public: keep personal details (contact info, resume content) out of tracked files.
